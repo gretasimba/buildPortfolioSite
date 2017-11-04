@@ -5,14 +5,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>My Portfolio</title>
 		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,600' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
 	</head>
 	<body>
 		<div class="container">
-			<div class="row">
-
+			<header class="row">
 				<div class="col-md-3" id="social"> 
 					<a href="mailto:olga.novgorodsky@gmail.com" class="zocial-gmail"></a>
 				</div>
@@ -20,7 +19,7 @@
 					<h1 class="title-super text-thin">Olga Novgorodsky </h1>  
 					<h4 class="subtitle">Front-end Ninja</h4>
 				</div>
-			</div>
+			</header>
 			<div class="row">
 				<div class="col-md-12">
 					<hr class="hr">
@@ -28,12 +27,22 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<img class="img-responsive" src="images/mil1.jpg" alt="Big Center Image">
+					<picture>
+						<source media="(max-width: 700px)" sizes="(max-width: 500px) 50vw, 10vw"
+						srcset="images/mil1_opt.jpg 138w" alt="Azores">
+
+						<source media="(max-width: 1400px)" sizes="(max-width: 1000px) 100vw, 50vw"
+						srcset="images/mil1.jpg 416w" alt="Azores">
+
+						<img src="images/mil.jpg" alt="Azores">
+					</picture>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<h2 class="text-muted text-almost-bold">Featured Work</h2>
+					<p>
+						<h2 class="text-muted text-almost-bold">Featured Work</h2>
+					</p>
 				</div>
 			</div>	
 			<div class="row text-center">
